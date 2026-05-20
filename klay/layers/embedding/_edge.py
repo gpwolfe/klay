@@ -12,7 +12,7 @@ from ..radial_basis import BesselBasis
 
 @register(
     "SphericalHarmonicEdgeAttrs",
-    inputs=["pos", "edge_index"],
+    inputs=["pos", "edge_index", "shift"],
     outputs=["edge_vec", "edge_lengths", "edge_sh"],
     category=ModuleCategory.EMBEDDING,
 )
